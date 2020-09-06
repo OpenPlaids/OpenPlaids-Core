@@ -1,2 +1,49 @@
-# OpenCheckSkirt
-Make checkskirt copyright fight never come againï¼
+# DiskRedeemer
+
+±àÒëÖ¸ÄÏÓëÎÄµµ
+Complie Guide & Docs
+ÖÐÎÄ°æ
+zh_CN
+
+## Ç°ÑÔ
+ÕâÍæÒâÕÛÌÚÆðÀ´·Ç³£Âé·³£¡£¡£¡
+²»ÄÜÍ¬Ê±°ÑËÄ¸öÍ·ÎÄ¼þ¶¼¼ÇÔÚÄÔ´üÀïµÄ²»½¨ÒéÊ¹ÓÃ±¾ÏîÄ¿£¡£¡£¡
+£¨Ò²ÊÇÎªÁËÔ´´úÂë±Õ°ü×öµÄÎÞÄÎÖ®¾Ù£¬±ÜÃâ¶ÔÔ´´úÂëµÄÐÞ¸Ä£©
+
+## ±àÒëËµÃ÷
+±¾³ÌÐòÓ¦·ÖÎªÁ½²¿·Ö½øÐÐ±àÒë
+µÚÒ»²¿·ÖÏÈ±àÒëINIwriter
+µÚ¶þ²¿·Ö±àÒëÖ÷³ÌÐò
+//ÎÒÒ»¿ªÊ¼ÊÇÏ£ÍûÖ÷³ÌÐòÔÚÔËÐÐÒÁÊ¼¿ÉÒÔ×Ô½âÑ¹ÊÍ·Å³öINIwriter£¬ºóÀ´·¢ÏÖÕâ²»¿ÉÐÐ
+ÇëÄúÒÀ´ÎÔÚComplierControl.hÖÐ·Ö±ð±£ÁôDiskRedeemer_INIwriterºÍDiskRedeemer_OpenMP
+²¢×¢Òâ±£´æÃ¿´Î±àÒëµÄÎÄ¼þ
+
+## ±àÒë²ÎÊý
+
+### ¿çÆ½Ì¨±àÒë
+#### WindowsÏÂµÄ±àÒë£¨VS2017+MSVC£©
+²âÊÔ»·¾³ÎªMicrosoft Windows 10 ¼ÒÍ¥ÖÐÎÄ°æ 10.0.18362 x Intel Core i7-8750HQ
+²âÊÔµÄÈí¼þ»·¾³ÎªVisual Studio 15.9.19
+½«OS.hÖÐ±£ÁôÇÒ½ö±£Áô
+#### LinuxÏÂµÄ±àÒë£¨GUN-gcc£©
+²âÊÔ»·¾³ÎªCentOS Linux 7 x  Intel(R) Xeon(R) Platinum 8163 CPU
+²âÊÔµÄÈí¼þ»·¾³Îªgcc-4.8.5-39.el7.x86_64
+ÁíÍâ£¬ÒòÎªÕâ¸ö³ÌÐòµÄÖ÷³ÌÐòÆôÓÃÁËOpenMPÓÅ»¯£¬ÈôÄúµÄ±àÒëÆ÷²»Ö§³ÖOpenMP£¬ÇëÄú
+ÒòLinuxÏÂµÄ¿ÉÖ´ÐÐÎÄ¼þÎªelfÎÄ¼þ£¬¹ÊÎÒÃÇÍÆ¼öÄúÓÃgcc main.c -o DiskRedeemer.elf
+#### ÆäËûÆ½Ì¨ÏÂµÄ±àÒë
+ÎÒÃÇÔÝÊ±Ã»ÓÐ·½·¨²âÊÔ£¬Äú¿ÉÒÔÆôÓÃOS.hÖÐµÄdefine SYSTEM_OTHERS
+
+### ¿çÓïÑÔ±àÒë¿ØÖÆ
+Òª¿ØÖÆÔÚ²»Í¬ÓïÑÔÏÂµÄ±àÒë£¬ÇëÖ±½ÓÔÚlanguage.hÖÐ±£ÁôÇÒ½ö±£ÁôËù±àÒëÓïÑÔµÄdefine²»±»×¢ÊÍ
+
+### Ä£Ê½¿ØÖÆ±àÒë
+±¾³ÌÐòÌá¹©ÒÔÏÂ¼¸¸öÄ£Ê½¿ØÖÆºê¶¨Òå
+#### ScenariosControl.h
+Òª¿ØÖÆÔÚ²»Í¬³¡¾°ÏÂµÄ±àÒë£¬ÇëÖ±½ÓÔÚScenariosControl.hÖÐ±£ÁôÇÒ½ö±£ÁôËù±àÒë³¡¾°µÄdefine²»±»×¢ÊÍ
+MODE_MILD //Èç¹ûÐèÒªÃæÏòÓÃ»§×÷Îª¸¨Öú¹¤¾ßÊ¹ÓÃ£¬ÇëÄúÈ¡ÏûÕâÒ»ÐÐµÄ×¢ÊÍ²¢×¢ÊÍMODE_VIOLENT£¬Ä¬ÈÏÎ´×¢ÊÍ£¬¸ÃÑ¡Ïî»òÐí»áÇáÎ¢Ó°ÏìÐÔÄÜ£¬µ«½«»á½ÏÎª¿É¿ØºÍ°²È«
+MODE_VIOLENT //Èç¹ûÐèÒªÆô¶¯ÆÆ»µÐÔµÄÐ´Èë²ßÂÔ»ò×÷Îª³Í·£ÐÔ³ÌÐò£¬ÇëÄúÈ¡ÏûÕâÒ»ÐÐµÄ×¢ÊÍ²¢×¢ÊÍMODE_MILD£¬Ä¬ÈÏ±»×¢ÊÍ
+#### ComplierControl.h
+Òª¿ØÖÆÔÚ²»Í¬²ÎÊýÏÂµÄ±àÒë£¬ÇëÖ±½ÓÔÚComplierControl.hÖÐ±£ÁôÇÒ½ö±£ÁôËù±àÒë²ÎÊýµÄdefine²»±»×¢ÊÍ
+DEBUG //Èç¹ûÐèÒª¿ªÆôDEBUGÄ£Ê½£¬Äú¿ÉÒÔÔÚ±àÒëÊ±ÆôÓÃÕâÒ»ÏîÀ´Éú³É²âÊÔ°æ£¬ÒÔ±£Ö¤releaseµÄ°æ±¾ÖÐ²»º¬ÓÐÈßÓàµÄÄÚÈÝ£¬Ä¬ÈÏÎ´×¢ÊÍ
+OpenMP_AVAILABLE //Èç¹ûÄúµÄ±àÒëÆ÷²»Ö§³ÖOpenMP£¬Äú¿ÉÒÔÔÚ±àÒëÊ±ÆôÓÃÕâÒ»ÏîÀ´Éú³ÉÎ´ÆôÓÃ¶àÏß³ÌÓÅ»¯µÄ°æ±¾ÒÔ±£Ö¤ÄÜ¹»Õý³£±àÒë£¬Ä¬ÈÏÎ´×¢ÊÍ¡£ÁíÍâÇëÄú×¢Òâ£¬Ê¹ÓÃMSVCÊ±OMPÓÅ»¯²»ÄÜÔÚ64Î»ÏÂÆô¶¯
+
