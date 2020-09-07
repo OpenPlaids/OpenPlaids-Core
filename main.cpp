@@ -136,7 +136,7 @@ int RandColorRGB(int * R, int * G, int * B)
 			INNER_R = 0;
 		}
 	}
-	Sleep(200);
+	Sleep(250);
 	while (abs(INNER_G - INNER_B) <= 10)
 	{
 		srand((unsigned int)time(NULL));
@@ -175,7 +175,7 @@ int RandColorRGB(int * R, int * G, int * B)
 int CanvasDraw(int mode)
 {
 
-	int DrawDuplicate = DUPLICATE_SQUARE;
+	int DrawDuplicate = DUPLICATE_MULTIPLY;
 
 
 
@@ -233,7 +233,7 @@ int CanvasDraw(int mode)
 
 	
 
-#ifdef RAND
+#ifndef RAND
 	//首先随机取色
 
 	int BG_R = 0;
@@ -244,6 +244,7 @@ int CanvasDraw(int mode)
 	int FG_B = 0;
 	printf("=====开始随机生成色彩，请耐心等待几秒=====\n");
 	RandColorRGB(&BG_R, &BG_G, &BG_B);
+	Sleep(500);
 	RandColorRGB(&FG_R, &FG_G, &FG_B);
 #ifdef _DEBUG
 	printf("BG   BG_R=%d,BG_G=%d,BG_B=%d\n", BG_R, BG_G, BG_B);
@@ -266,18 +267,40 @@ int CanvasDraw(int mode)
 	printf("CanvasOriginalDrawNum=%d\n", CanvasOriginalDrawNum);
 #endif // _DEBUG
 
-	IMAGE* OriginDuplicate = NULL;
-	//getimage(OriginDuplicate, 0, 0, CanvasOriginalDrawNum, CanvasOriginalDrawNum);
+	IMAGE OriginDuplicate = NULL;
 	//saveimage(_T("778899.bmp"), OriginDuplicate);
-	//putimage(0, CanvasOriginalDrawNum + 1, OriginDuplicate, SRCCOPY);
-	//putimage(CanvasOriginalDrawNum + 1, 0, OriginDuplicate, SRCCOPY);
-	//putimage(CanvasOriginalDrawNum + 1, CanvasOriginalDrawNum + 1, OriginDuplicate, SRCCOPY);
+	getimage(&OriginDuplicate, 0, 0, CanvasOriginalDrawNum, CanvasOriginalDrawNum);
+	int index = 0;
+	if (DrawDuplicate == DUPLICATE_SQUARE)
+	{
+		putimage(0, CanvasOriginalDrawNum, &OriginDuplicate, SRCCOPY);
+		putimage(CanvasOriginalDrawNum, 0, &OriginDuplicate, SRCCOPY);
+		putimage(CanvasOriginalDrawNum, CanvasOriginalDrawNum, &OriginDuplicate, SRCCOPY);
+	}
+	if (DrawDuplicate == DUPLICATE_MULTIPLY)
+	{
+		int index = 0;
+		int jndex = 0;
+		for (index = 0; index <= 2; ++index)
+		{
+			for (jndex = 0; jndex <= 2; ++jndex)
+			{
+				if (index != 0 || jndex != 0)
+				{
+					putimage(CanvasOriginalDrawNum*index, CanvasOriginalDrawNum*jndex, &OriginDuplicate, SRCCOPY);
+				}
+			}
+		}
+	}
 	return 0;
 }
 
 int SystemDraw(int mode)
 {
-
+	//一代算法计划添加的有：刷新、退出、设置、算法版本信息显示
+	//一代算法计划改进的有：增加手动选择增长能力的界面
+	//希望添加自动保存
+	//以上为1.1.0希望看到的
 	return 0;
 }
 
