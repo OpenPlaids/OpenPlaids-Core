@@ -38,3 +38,6 @@
 *.tlog
 *.idb
 *.suo
+*.iobj
+*.ipdb
+*.opendb
