@@ -295,6 +295,8 @@ int CanvasDraw(int mode)
 	return 0;
 }
 
+//关于Canvas等变量名称的分析文档将随后发布
+
 int SystemDraw(int mode)
 {
 	//一代算法计划添加的有：刷新、退出、设置、算法版本信息显示
@@ -326,7 +328,7 @@ int ParaVertTwiceDraw(int Begin, int End, COLORREF Color)
 
 int main(void)
 {
-	printf("Welcome to use OpenCheckSkirt！\n");
+	printf("Welcome to use OpenPlaids！\n");
 	//
 	//LOGO print
 	//

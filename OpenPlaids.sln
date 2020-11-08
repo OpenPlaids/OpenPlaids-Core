@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCheckSkirt", "OpenCheckSkirt.vcxproj", "{1395897A-E698-4808-836F-87119ED05636}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenPlaids", "OpenPlaids.vcxproj", "{1395897A-E698-4808-836F-87119ED05636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
