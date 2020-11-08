@@ -1,49 +1,45 @@
-# DiskRedeemer
+# OpenPlaids
 
-����ָ�����ĵ�
-Complie Guide & Docs
-���İ�
-zh_CN
+## 前言
+你所看到的，不仅仅是格子
+What you see is not just the Plaids
 
-## ǰ��
-���������������ǳ��鷳������
-����ͬʱ���ĸ�ͷ�ļ��������Դ���Ĳ�����ʹ�ñ���Ŀ������
-��Ҳ��Ϊ��Դ����հ���������֮�٣������Դ������޸ģ�
+## 名称由来
 
-## ����˵��
-������Ӧ��Ϊ�����ֽ��б���
-��һ�����ȱ���INIwriter
-�ڶ����ֱ���������
-//��һ��ʼ��ϣ����������������ʼ�����Խ�ѹ�ͷų�INIwriter�����������ⲻ����
-����������ComplierControl.h�зֱ���DiskRedeemer_INIwriter��DiskRedeemer_OpenMP
-��ע�Ᵽ��ÿ�α�����ļ�
+本项目最初定义为用于生成JK格裙图案，用于避免各种小圈子互相撕逼，天天吆喝所谓设计的图案有版权之类，浪费时间。
 
-## �������
+不如我们生成世界上所有的图案并开放，这样就不会有版权问题了。而后来又觉得，其真正的用途，在于解放劳动力，不需要人为的去刻意设定绘制的学问和刻画规则，只要训练好调整好设定好模型或者算法，就可以无人工操作的自动批量生成能过双盲的图案，能自动按照一定风格命名。
 
-### ��ƽ̨����
-#### Windows�µı��루VS2017+MSVC��
-���Ի���ΪMicrosoft Windows 10 ��ͥ���İ� 10.0.18362 x Intel Core i7-8750HQ
-���Ե���������ΪVisual Studio 15.9.19
-��OS.h�б����ҽ�����
-#### Linux�µı��루GUN-gcc��
-���Ի���ΪCentOS Linux 7 x  Intel(R) Xeon(R) Platinum 8163 CPU
-���Ե���������Ϊgcc-4.8.5-39.el7.x86_64
-���⣬��Ϊ��������������������OpenMP�Ż��������ı�������֧��OpenMP������
-��Linux�µĿ�ִ���ļ�Ϊelf�ļ����������Ƽ�����gcc main.c -o DiskRedeemer.elf
-#### ����ƽ̨�µı���
-������ʱû�з������ԣ�����������OS.h�е�define SYSTEM_OTHERS
+但是后来也想到，JK文化毕竟是小众文化，而国内的JK裙子，其实是我国特色的产物，并非原本的JK文化，它已经是单纯的格裙了。因此叫做OpenJK显然是不合适的。
 
-### �����Ա������
-Ҫ�����ڲ�ͬ�����µı��룬��ֱ����language.h�б����ҽ��������������Ե�define����ע��
+此外，苏格兰传统格裙，也是一种格裙。甚至程序员的格子衬衫，也有非常多的花纹和特色。如果程序员可以自己生成自己喜欢的格子图案，那想必是不错的吧？~~（定制T恤厂家快来打钱这里是商机（狗头））~~
 
-### ģʽ���Ʊ���
-�������ṩ���¼���ģʽ���ƺ궨��
-#### ScenariosControl.h
-Ҫ�����ڲ�ͬ�����µı��룬��ֱ����ScenariosControl.h�б����ҽ����������볡����define����ע��
-MODE_MILD //�����Ҫ�����û���Ϊ��������ʹ�ã�����ȡ����һ�е�ע�Ͳ�ע��MODE_VIOLENT��Ĭ��δע�ͣ���ѡ���������΢Ӱ�����ܣ��������Ϊ�ɿغͰ�ȫ
-MODE_VIOLENT //�����Ҫ�����ƻ��Ե�д����Ի���Ϊ�ͷ��Գ�������ȡ����һ�е�ע�Ͳ�ע��MODE_MILD��Ĭ�ϱ�ע��
-#### ComplierControl.h
-Ҫ�����ڲ�ͬ�����µı��룬��ֱ����ComplierControl.h�б����ҽ����������������define����ע��
-DEBUG //�����Ҫ����DEBUGģʽ���������ڱ���ʱ������һ�������ɲ��԰棬�Ա�֤release�İ汾�в�������������ݣ�Ĭ��δע��
-OpenMP_AVAILABLE //������ı�������֧��OpenMP���������ڱ���ʱ������һ��������δ���ö��߳��Ż��İ汾�Ա�֤�ܹ��������룬Ĭ��δע�͡���������ע�⣬ʹ��MSVCʱOMP�Ż�������64λ������
+而后来发现，方格纹理，作为一种特殊的格纹，也应当收到重视。最终，这个名字希望是一个能不针对某一个小众的格纹应用场景，而是一个能覆盖尽可能多的格子自动生成库。
 
+本处之所以选用Plaids，主要还是考虑到这里的格子，最终目标是为了让服装和纺织品印刷品能够使用，因此使用抽象含义的Grid，使用理工科专有名词的Lattice，使用过于宽泛的Check，使用主要特指方格而非各类格纹的Chequer，都是不合适的
+
+它将主要可以应用于以下场景：JK风格裙纹理生成、格子衬衫纹理生成、抽象方格旗帜纹理生成
+
+当然，我们无权干预别人对它的称呼，因此对它的如OpenJK、OpenCheckShirt等一系列俗称，都是允许且被接受的。
+
+Enjoy yourself！
+
+## 编译说明
+暂无，请注意安装EasyX库（目前而言，等换了图形库会好起来的）
+
+### 编译参数
+关掉SDL检查，谢谢
+
+### 跨平台编译
+#### Windows下的编译（VS2017+MSVC）
+测试环境为Microsoft Windows 10 家庭中文版 10.0.18362 x Intel Core i7-8750HQ
+测试的软件环境为Visual Studio 15.9.19
+将OS.h中保留且仅保留
+#### Linux下的编译（GUN-gcc）
+暂无，建议wine
+#### 其他平台下的编译
+暂无，MacOS建议wine，其他的建议做梦
+### 跨语言编译控制
+暂无
+### 模式控制编译
+暂无
