@@ -21,6 +21,12 @@
     <ClInclude Include="Header\ComplierControl.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Header\Draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Basic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Body\Color.cpp">

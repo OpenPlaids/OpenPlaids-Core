@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header\Basic.h" />
     <ClInclude Include="Header\Color.h" />
     <ClInclude Include="Header\ComplierControl.h" />
+    <ClInclude Include="Header\Draw.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Body\Color.cpp" />

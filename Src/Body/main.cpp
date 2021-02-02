@@ -2,17 +2,11 @@
 
 #ifdef Easyx
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
-#include<conio.h>
-#include<easyx.h>
-#include<graphics.h>
-#include<time.h>
-#include<math.h>
 
+#include "../Header/Basic.h"
 #include "../Header/Color.h"
+
+//Init Function in different Header files
 
 int RandColorRGB(int * R, int * G, int * B);
 
@@ -123,10 +117,7 @@ int CanvasDraw(int mode)
 	//第一代算法：直接涂一个十字
 
 
-
-	
-
-#ifndef RAND
+#ifndef NO_RAND
 	//首先随机取色
 
 	int BG_R = 0;

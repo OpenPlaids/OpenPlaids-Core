@@ -1,3 +1,4 @@
+#include "../Header/Basic.h"
 #include "../Header/Color.h"
 
 int RandColorRGB(int * R, int * G, int * B)
