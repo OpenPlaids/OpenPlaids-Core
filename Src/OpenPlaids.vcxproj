@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header\Color.h" />
     <ClInclude Include="Header\ComplierControl.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Body\Color.cpp" />
     <ClCompile Include="Body\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

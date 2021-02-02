@@ -15,13 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header\Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="Header\ComplierControl.h">
-      <Filter>源文件</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Body\Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="Body\main.cpp">
-      <Filter>资源文件</Filter>
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
