@@ -1,39 +1,4 @@
-﻿
-//#include <iostream>
-//
-//int main()
-//{
-//    std::cout << "Hello World!\n";
-//#ifdef __WINDOWS_
-//	printf("win32");
-//#endif
-//}
-
-//#include"ComplierControl.h"
-//
-//#ifdef DiskRedeemer_OpenMP
-////#include"DiskRedeemer_INIwriter.h"
-//#include"DiskRedeemer_OpenMP.h"
-//
-//int main(int argc, char *argv[])
-//{
-//	main_Redeemer(argc, argv);
-//	return 0;
-//}
-//#endif // DiskRedeemer_OpenMP//主程序
-//
-//#ifdef DiskRedeemer_INIwriter
-//#include"DiskRedeemer_INIwriter.h"
-////#include"DiskRedeemer_OpenMP.h"
-//
-//int main(void)
-//{
-//	main_INIwriter();
-//	return 0;
-//}
-//#endif // DiskRedeemer_INIwriter
-
-#define Easyx
+﻿#define Easyx
 
 #ifdef Easyx
 
