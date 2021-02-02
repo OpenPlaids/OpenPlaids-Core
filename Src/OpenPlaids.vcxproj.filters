@@ -15,16 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\Color.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Header\ComplierControl.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Draw.h">
+    <ClInclude Include="Header\Include.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Basic.h">
+    <ClInclude Include="Header\Basic.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Color.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Draw.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -33,6 +36,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Body\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Body\Basic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

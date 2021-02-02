@@ -1,5 +1,5 @@
-#include "../Header/Basic.h"
-#include "../Header/Color.h"
+#include "../Header/Basic.hpp"
+#include "../Header/Color.hpp"
 
 int RandColorRGB(int * R, int * G, int * B)
 {

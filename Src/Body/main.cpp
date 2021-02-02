@@ -3,47 +3,15 @@
 #ifdef Easyx
 
 
-#include "../Header/Basic.h"
-#include "../Header/Color.h"
+#include "../Header/Basic.hpp"
+#include "../Header/Color.hpp"
+#include "../Header/Draw.hpp"
 
 //Init Function in different Header files
 
 int RandColorRGB(int * R, int * G, int * B);
 
-#define WINDOW_W 900*0.5
-#define WINDOW_H 1000*0.5
 
-//通过坐标和百分数定义绘图区域和设置区域
-
-int CanvasDrawL = (int)WINDOW_W * 0.000;
-int CanvasDrawU = (int)WINDOW_H * 0.000;
-int CanvasDrawR = (int)WINDOW_W * 1.000;
-int CanvasDrawD = (int)WINDOW_H * 0.900;
-int CanvasDrawNum = CanvasDrawR;
-
-
-int SystemDrawL = (int)WINDOW_W * 0.000;
-int SystemDrawU = (int)WINDOW_H * 0.901;
-int SystemDrawR = (int)WINDOW_W * 1.000;
-int SystemDrawD = (int)WINDOW_H * 1.000;
-
-//本程序不再采用之前采用的全局刷新的策略，而改用局部刷新，挑战更多烧脑的地方
-
-HRGN CanvasDrawHRGN = CreateRectRgn(CanvasDrawL, CanvasDrawU, CanvasDrawR, CanvasDrawD);
-HRGN SystemDrawHRGN = CreateRectRgn(SystemDrawL, SystemDrawU, SystemDrawR, SystemDrawD);
-
-//把复制份数作为全局变量
-
-int DrawDuplicate = 0;
-#define DUPLICATE_SINGLE 1001
-#define DUPLICATE_SQUARE 1002
-#define DUPLICATE_MULTIPLY 1003
-
-int CanvasOriginalDrawL = 0;
-int CanvasOriginalDrawU = 0;
-int CanvasOriginalDrawR = 0;
-int CanvasOriginalDrawD = 0;
-int CanvasOriginalDrawNum = 0;
 
 int InitDraw(int mode)
 //mode干什么用还没定,先留着

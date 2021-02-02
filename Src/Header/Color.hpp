@@ -1,6 +1,6 @@
-#include "../Header/Basic.h"
-
 #pragma once
+
+#include "../Header/Basic.hpp"
 
 class Color
 {
